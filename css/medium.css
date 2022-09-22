@@ -1,0 +1,19 @@
+@media (min-width: 32.5em){
+    h1{
+        font-size: 2.5rem;
+        text-shadow: 3px 3px 6px rgb(2, 2, 2);
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    main ul li{
+        font-size: 1.3rem;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+    .imgZeir{
+        max-width: 100%;
+        border-radius: 50%;
+    }
+}
