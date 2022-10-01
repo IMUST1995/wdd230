@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Comfortaa:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap');
+:root{
+    --primary-color: #00005f;
+    --secondary-color: #ff6506;
+    --terciary-color: white;
+    --primary-font: 'Bellefair', serif;
+    --secondary-font: 'Comfortaa', cursive;
+    --terciary-font: 'Zen Maru Gothic', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--secondary-font), sans-serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+nav{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+.logoContainer{
+    width: 6%;
+    padding: 1rem;
+    margin: .5rem;
+}
