@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Comfortaa:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap');
 :root{
-    --primary-color: #00005f;
-    --secondary-color: #ff6506;
-    --terciary-color: white;
+    --first-color: #3C3744;
+    --second-color: #090C9B;
+    --third-color: #3066BE;
+    --fourth-color: #B4C5E4;
+    --fifth-color: #FBFFF1;
     --primary-font: 'Bellefair', serif;
     --secondary-font: 'Comfortaa', cursive;
     --terciary-font: 'Zen Maru Gothic', sans-serif;
@@ -10,27 +11,41 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: var(--secondary-font), sans-serif;
+    font-family: var(--second-font), sans-serif;
+    color: var(--first-color);
+    line-height: 2.3rem;
 }
-
 header{
-    background-color: var(--primary-color);
-    color: var(--terciary-color);
+    background-color: var(--first-color);
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
 }
+body{
+    background-color: var(--fifth-color);
+}
+footer{
+    background-color: var(--first-color);
+    color: var(--fifth-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+}
 nav{
-    width: 94%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 nav ul{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
+    justify-content: space-center;
     width: 100%;
+    padding: 0;
+    margin: 1rem;
 }
 a{
     text-decoration: none;
@@ -38,15 +53,103 @@ a{
 li{
     list-style: none;
 }
-
+p{
+    text-indent: 15px
+}
 nav ul li a{
-    color: white;
+    color: var(--fifth-color);
+}
+nav ul li a{
+    padding: .5rem;
+}
+nav ul li a:hover{
+    color: var(--first-color);
+    font-size: smaller;
+    transition: ease .6s;
+}
+nav ul li a:not(:hover){
+    transition: ease 2s;
 }
 img{
     max-width: 100%;
 }
+main img{
+    max-width: 50%;
+    background-color: var(--first-color);
+}
 .logoContainer{
-    width: 6%;
+    width: 90px;
     padding: 1rem;
     margin: .5rem;
+}
+.sitePurpose{
+    margin: 2rem 0rem 0rem;
+}
+main{
+    margin: 0rem 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+footer p{
+    margin: 1rem;
+    color: var(--fifth-color);
+}
+
+.colors{
+    text-align: center;
+    margin: .5rem;
+    padding: 1rem;
+    border: solid var(--first-color) 1px;
+}
+.color1{
+    background-color: var(--first-color);
+    color: var(--fifth-color);
+}
+.color2{
+    background-color: var(--second-color);
+    color: var(--fifth-color);
+}
+.color3{
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+}
+.color4{
+    background-color: var(--fourth-color);
+    color: var(--fifth-color);
+}
+.color5{
+    background-color: var(--fifth-color);
+    color: var(--first-color);
+}
+/* typography page */
+.font1, h1{
+    font-family: var(--primary-font);
+}
+.font2, p, ul li{
+    font-family: var(--secondary-font);
+}
+.font3{
+    font-family: var(--terciary-font);
+}
+.fonts{
+    margin: 1rem;
+}
+/* target audience */
+section h2{
+    margin: 1rem;
+}
+section ul li{
+    list-style: circle;
+    margin: 1rem;
+}
+
+/* target audience */
+.profileTarget{
+    border: solid var(--first-color) 2px;
+    box-shadow: 2px 2px var(--first-color);
+    
+}
+main div{
+    padding: 2rem;
 }
