@@ -1,0 +1,32 @@
+@media(min-width: 35rem){
+    main{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        gap: 1rem; 
+        grid-template-areas: 
+          "heroContainer heroContainer heroContainer"
+          "newReleaseContainer newReleaseContainer newReleaseContainer"
+          "spotlightsHolder spotlightsHolder spotlightsHolder"
+          "joinContainer joinContainer joinContainer"
+          "eventContainer eventContainer weatherContainer"; 
+    }
+    .heroContainer{
+        grid-area: heroContainer;
+    }
+    .newReleaseContainer{
+        grid-area: newReleaseContainer;
+    }
+    .spotlightsHolder{
+        grid-area: spotlightsHolder;
+    }
+    .joinContainer{
+        grid-area: joinContainer;
+    }
+    .eventContainer{
+        grid-area: eventContainer;
+    }
+    .weatherContainer{
+        grid-area: weatherContainer;
+    }
+}
