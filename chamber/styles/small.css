@@ -274,3 +274,7 @@ main div div{
     color: white;
     margin: 1rem;
 }
+.joinContainer, .spotlightThreeContainer{
+    grid-area: joinContainer;
+    display: none;
+}

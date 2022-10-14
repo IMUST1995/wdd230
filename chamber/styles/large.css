@@ -4,8 +4,12 @@
         display: flex;
         justify-content: space-between;
     }
+
+    #Title{
+        display: block;
+    }
     .smallMenu{
-        display: inline;
+        display: block;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -44,6 +48,9 @@
     }
     .joinContainer{
         grid-area: joinContainer;
+    }
+    .spotlightThreeContainer{
+        display: block;
     }
     /* DELETE THIS */
 

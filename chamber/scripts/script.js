@@ -47,27 +47,31 @@ panelDate()
 responsiveMenu()
 
 
-const joinContainer = document.querySelector('.joinContainer')
+/* const joinContainer = document.querySelector('.joinContainer')
 window.onresize = () => {
     if(window.innerWidth > 560){
         joinContainer.classList.remove('displayNone')
-    }
-    else{
-        joinContainer.classList.add('displayNone')
     }
 };
 
 if(window.innerWidth > 560){
     joinContainer.classList.remove('displayNone')
-}
+} */
 
 
 
 const menu = document.querySelector('.smallMenu')
-if(window.innerWidth > 960){
-    menu.classList.toggle('diplayNone')
-}
-window.onresize = () => {if (window.innerWidth > 960) menu.classList.toggle('displayNone')};
+/*  if(window.innerWidth > 960){
+    menu.classList.remove('diplayNone')
+} 
+window.onresize = () => {
+    if (window.innerWidth > 960){ 
+    menu.classList.toggle('displayNone')
+    }
+    else if ({
+        menu.classList.toggle('displayNone')
+    }
+}; */
 /* const largeMenu = document.querySelector('.smallMenu')
 
 if(window.innerWidth > 960){
@@ -85,15 +89,12 @@ window.onresize = () => {
 
 
 
-const spotlightThreeContainer = document.querySelector('.spotlightThreeContainer')
+/* const spotlightThreeContainer = document.querySelector('.spotlightThreeContainer')
 window.onresize = () => {
     if (window.innerWidth > 960){
         spotlightThreeContainer.classList.remove('displayNone')
     }
-    else{
-        spotlightThreeContainer.classList.add('displayNone')
-    }
 };
 if(window.innerWidth > 960){
     spotlightThreeContainer.classList.remove('displayNone')
-}
+} */

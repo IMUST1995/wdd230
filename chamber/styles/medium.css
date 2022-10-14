@@ -22,6 +22,7 @@
     }
     .joinContainer{
         grid-area: joinContainer;
+        display: block;
     }
     .eventContainer{
         grid-area: eventContainer;
