@@ -1,0 +1,32 @@
+
+li {
+margin-bottom: 10px;
+}
+
+li button {
+font-size: 8px;
+margin-left: 20px;
+color: #666;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    background-color: ivory;
+}
+ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+ul li button{
+    color: red;
+    padding: 0;
+    width: 2rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
