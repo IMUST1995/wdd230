@@ -46,7 +46,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-center;
+    justify-content: center;
     width: 80%;
     padding: 0;
     margin: 1rem;
@@ -78,6 +78,9 @@ nav ul li a:hover{
 nav ul li a:not(:hover){
     transition: ease 2s;
 }
+/* nav ul li:active a{
+    background-color: #090C9B;
+} */
 img{
     max-width: 100%;
 }
@@ -165,8 +168,21 @@ main div{
 .iconContainer{
     margin: 1rem;
     width: 3rem;
+    font-size: 2rem;
 }
-.icon, .logo{
+/* .iconContainer span:nth-child(1){
+    display: block;
+}
+.iconContainer span:nth-child(1).open{
+    display: none;
+}
+.iconContainer span:nth-child(2){
+    display: none
+}
+.iconContainer span:nth-child(2).open{
+    display: block;
+} */
+.icon, .logo, .iconX{
     cursor: pointer;
 }
 .displayNone{
@@ -232,7 +248,7 @@ footer{
     width: 100%;
 }
 .infoContainer p{
-    margin: .5rem .5rem .5rem 0rem;
+    margin: .5rem .5rem .5rem 0;
 }
 #personalInfo{
     text-align: center;
