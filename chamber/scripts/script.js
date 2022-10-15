@@ -16,7 +16,7 @@ function responsiveMenu(){
 }
 
 
-function panelDate(){
+/* function panelDate(){
     const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     function getDay(date, dayNames){
@@ -36,65 +36,35 @@ function panelDate(){
     const dateHeader = document.getElementById('dateHeader');
     dateHeader.innerHTML = `${day}, ${DayNumber} ${month} ${year}`
 }
+ */
+
+const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 const date = new Date();
+let number = date.getDay()
+const day = dayNames[number]
+let numberMonth = date.getMonth()
+const month = monthNames[numberMonth]
 const year = date.getFullYear();
+const DayNumber = date.getDate()
+const dateHeader = document.getElementById('dateHeader');
+dateHeader.innerHTML = `${day}, ${DayNumber} ${month} ${year}`
+
+
 const personalInfo = document.querySelector('#personalInfo');
 personalInfo.innerHTML = `&copy ${year} | Denver Chamber of Commerce | Zeir Braidi | WDD 230 Project`
 const currentDate = document.getElementById('currentDate');
 currentDate.innerHTML = `Last updated: ${document.lastModified}`
 
-panelDate()
+/* panelDate() */
 responsiveMenu()
 
+/* banner */
 
-/* const joinContainer = document.querySelector('.joinContainer')
-window.onresize = () => {
-    if(window.innerWidth > 560){
-        joinContainer.classList.remove('displayNone')
-    }
-};
-
-if(window.innerWidth > 560){
-    joinContainer.classList.remove('displayNone')
-} */
-
-
-
-const menu = document.querySelector('.smallMenu')
-/*  if(window.innerWidth > 960){
-    menu.classList.remove('diplayNone')
-} 
-window.onresize = () => {
-    if (window.innerWidth > 960){ 
-    menu.classList.toggle('displayNone')
-    }
-    else if ({
-        menu.classList.toggle('displayNone')
-    }
-}; */
-/* const largeMenu = document.querySelector('.smallMenu')
-
-if(window.innerWidth > 960){
-    largeMenu.classList.toggle('menuLarge')
+if(number == 3){
+    const spanBanner = document.querySelector('#banner')
+    spanBanner.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
+    banner.classList.add('banner')
 }
-window.onresize = () => {
-    if (window.innerWidth > 960){
-        largeMenu.classList.add('menuLarge')
-        alert('menularge')
-    }
-    else{
-    largeMenu.classList.add('displayNone')
-    }
-}; */
-
-
-
-/* const spotlightThreeContainer = document.querySelector('.spotlightThreeContainer')
-window.onresize = () => {
-    if (window.innerWidth > 960){
-        spotlightThreeContainer.classList.remove('displayNone')
-    }
-};
-if(window.innerWidth > 960){
-    spotlightThreeContainer.classList.remove('displayNone')
-} */
+/* 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. */

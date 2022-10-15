@@ -30,4 +30,12 @@
     .weatherContainer{
         grid-area: weatherContainer;
     }
+    .heroContainer h2{
+        font-size: 2rem;
+    }
+    .btnJoin{
+        font-size: 1rem;
+        padding: .8rem;
+        right: 1rem;
+    }
 }

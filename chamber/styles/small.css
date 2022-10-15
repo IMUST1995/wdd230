@@ -15,9 +15,16 @@
     color: var(--first-color);
     
 }
+h1, h2, h3, h4{
+    font-family: var(--primary-font);
+}
+p{
+    font-family: var(--secondary-font);
+}
 header{
     background-color: var(--first-color);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     font-size: 1.2rem;
 }
@@ -41,6 +48,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 nav ul{
     display: flex;
@@ -57,9 +65,6 @@ a{
 }
 li{
     list-style: none;
-}
-p{
-    text-indent: 15px
 }
 nav ul li{
     margin: .5rem;
@@ -82,7 +87,7 @@ nav ul li a:not(:hover){
     background-color: #090C9B;
 } */
 img{
-    max-width: 100%;
+    width: 100%;
 }
 main img{
     max-width: 50%;
@@ -97,8 +102,7 @@ main img{
     margin: 2rem 0rem 0rem;
 }
 main{
-    margin: 0rem 2rem;
-    padding: 3rem;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -161,9 +165,6 @@ section ul li{
     box-shadow: 2px 2px var(--first-color);
     
 }
-main div{
-    padding: 2rem;
-}
 /* nav burger */
 .iconContainer{
     margin: 1rem;
@@ -195,6 +196,9 @@ main div{
     transition: ease 1s;
     background-color: black;
 }
+h1{
+    margin-top: 0;
+}
 nav div h1{
     margin: 1rem 0 0 0;
 }
@@ -217,7 +221,7 @@ transition: ease 1s;
 }
 #dateHeader{
     background-color: #45414a;
-    margin: .5rem 0 1rem 0;
+    margin: .5rem 0 .4rem 0;
     padding: .3rem;
 }
 footer{
@@ -264,17 +268,66 @@ main{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
-/* delete this => */
-main div{
-    background-color: var(--fourth-color);
-    color: black;
-}
-main div div{
-    background-color: var(--second-color);
-    color: white;
-    margin: 1rem;
-}
 .joinContainer, .spotlightThreeContainer{
     grid-area: joinContainer;
     display: none;
 }
+/* hero styles */
+.heroContainer{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.heroContainer img{
+    min-width: 100%;
+    opacity: .5;
+}
+.heroContainer h2{
+    color: black;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    color: var(--first-color);
+}
+.btnJoin{
+    font-size: .8rem;
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+    padding: .6rem;
+    position: absolute;
+    bottom: 1rem;
+    right: .5rem;
+    cursor: pointer;
+    border: 1px solid var(--fifth-color);
+    border-radius: 2rem;
+    transition: all ease-in .5s;
+}
+.btnJoin:hover{
+    transform: scale(1.005);
+    transition: all ease-in .3s;
+    background-color: var(--fifth-color);
+    color: var(--first-color);
+    border: solid 1px var(--first-color);
+}
+.eventContainer{
+    background-color: var(--fourth-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.eventContainer h3, .eventContainer a, .eventContainer h4{
+    margin: .6rem;
+}
+.mainDivHeader{
+    display: flex;
+    margin-top: 0;
+}
+.banner{
+    text-align: center;
+    color: ivory;
+    padding: 0;
+    margin-top: .5rem;
+}
+/* wheather container */
