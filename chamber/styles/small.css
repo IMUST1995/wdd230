@@ -331,3 +331,24 @@ main{
     margin-top: .5rem;
 }
 /* wheather container */
+
+
+
+/* delete this future myself */
+div.spotlightsHolder{
+    background-color: #3066BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid 2px black;
+    
+}
+.spotlightsHolder div{
+    background-color: pink;
+    padding: 3rem 2rem;
+    margin: 1rem;
+    border: solid 2px black;
+}
+main div {
+    border: solid 2px black;
+}
