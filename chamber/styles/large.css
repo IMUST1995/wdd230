@@ -21,41 +21,6 @@
     .icon{
         display: none;
     }
-    /* main{
-        margin-top:  1rem;
-        display: grid; 
-        grid-template-columns: repeat(4, auto);
-        grid-template-rows: repeat(6, auto);
-        gap: 1rem; 
-        grid-template-areas: 
-          "eventContainer heroContainer heroContainer spotlightsHolder"
-          "eventContainer heroContainer heroContainer spotlightsHolder"
-          "weatherContainer heroContainer heroContainer spotlightsHolder"
-          "weatherContainer heroContainer heroContainer spotlightsHolder"
-          "joinContainer newReleaseContainer newReleaseContainer spotlightsHolder"
-          "joinContainer newReleaseContainer newReleaseContainer spotlightsHolder"; 
-      }
-    .heroContainer{
-        grid-area: heroContainer;
-    }
-    .eventContainer{
-        grid-area: eventContainer;
-    }
-    .weatherContainer{ 
-    grid-area: weatherContainer;
-    }
-    .newReleaseContainer{
-        grid-area: newReleaseContainer;
-    }
-    .spotlightsHolder{
-        grid-area: spotlightsHolder;
-        display: flex;
-        flex-direction: column;
-    }
-    .joinContainer{
-        grid-area: joinContainer;
-    }
-     */
     main div{
         margin: 0;
     }
