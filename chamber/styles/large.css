@@ -21,15 +21,18 @@
     .icon{
         display: none;
     }
-    main{
+    /* main{
         margin-top:  1rem;
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(6, auto);
         gap: 1rem; 
         grid-template-areas: 
           "eventContainer heroContainer heroContainer spotlightsHolder"
+          "eventContainer heroContainer heroContainer spotlightsHolder"
           "weatherContainer heroContainer heroContainer spotlightsHolder"
+          "weatherContainer heroContainer heroContainer spotlightsHolder"
+          "joinContainer newReleaseContainer newReleaseContainer spotlightsHolder"
           "joinContainer newReleaseContainer newReleaseContainer spotlightsHolder"; 
       }
     .heroContainer{
@@ -46,22 +49,89 @@
     }
     .spotlightsHolder{
         grid-area: spotlightsHolder;
+        display: flex;
+        flex-direction: column;
     }
     .joinContainer{
         grid-area: joinContainer;
     }
-    .spotlightThreeContainer{
-        display: block;
+     */
+    main div{
+        margin: 0;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        }
+    .spotlightsHolder {
+        grid-area: 1 / 7 / 5 / 9;
+        display: flex;
+        flex-direction: column;
+    }
+    .eventContainer {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .heroContainer {
+        grid-area: 1 / 3 / 4 / 7;
+    }
+    .newReleaseContainer{
+        grid-area: 4 / 3 / 5 / 7;
+    }
+    .weatherContainer {
+        grid-area: 2 / 1 / 4 / 3;
+        height: 100%;
+    }
+    .joinContainer {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+
+
+    .joinContainer p, .joinContainer button{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
     }
     .heroContainer h2{
-        font-size: 1.7rem;
-    }
-    .heroContainer img{
-        width: 100%;
+        font-size: 1.5rem;
         height: 100%;
     }
     .btnJoin{
         font-size: .8rem;
-        padding: .6rem;
+        padding: .8rem;
+        right: 1rem;
+    }
+    
+    .spotlightThreeContainer{
+        display: block;
+        height: 1rem
+    }
+    .imgWeather, div.truck, div.house{
+        width: 5rem;
+        margin: 0;
+        padding: 0;
+    }
+    .eventContainer, .weatherContainer, .joinContainer, .spotlightsHolder{
+        font-size: smaller;
+        max-width: 10rem;
+    }
+    .smallSpot p{
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .smallSpot{
+        height: 14rem;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        font-size: smaller;
+        height: 100%;
+    }
+    .smallSpot h3, .smallSpot p{
+        display: none;
+    }
+    .weatherImgContainer p{
+        font-size: 2rem;
     }
 }

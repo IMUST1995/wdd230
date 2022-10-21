@@ -105,6 +105,7 @@ main{
     padding: 0;
     display: flex;
     flex-direction: column;
+    margin: .5rem;
 }
 footer p{
     margin: 1rem;
@@ -262,25 +263,35 @@ footer{
     margin: 0;
 }
 /* main grid */
+main div{
+    margin: 1rem 0;
+}
 main{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
     gap: 1rem;
 }
 .joinContainer, .spotlightThreeContainer{
-    grid-area: joinContainer;
     display: none;
+}
+.joinContainer{
+    grid-area: joinContainer;
 }
 /* hero styles */
 .heroContainer{
     padding: 0;
     margin: 0;
     position: relative;
+    height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .heroContainer img{
     min-width: 100%;
-    opacity: .5;
+    opacity: .8;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.419);
 }
 .heroContainer h2{
     color: black;
@@ -309,13 +320,17 @@ main{
     color: var(--first-color);
     border: solid 1px var(--first-color);
 }
+/* .eventContainer */
+
 .eventContainer{
-    background-color: var(--fourth-color);
+    background-color: var(--fifth-color);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
 }
 .eventContainer h3, .eventContainer a, .eventContainer h4{
     margin: .6rem;
@@ -335,20 +350,92 @@ main{
 
 
 /* delete this future myself */
-div.spotlightsHolder{
-    background-color: #3066BE;
+
+/* WEATHER SECTION */
+.weatherContainer{
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    border: solid 2px black;
-    
+    text-align: center;
+    background-color: var(--fourth-color);
+    padding-top: 1rem;
 }
-.spotlightsHolder div{
-    background-color: pink;
-    padding: 3rem 2rem;
+.conditionsWeather{
+    text-align: end;
+    padding-right: 1rem;
+}
+.weatherImgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3rem;
+}
+.weatherImgContainer img{
+    border: solid 1px black;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 20px 50px;
+}
+.windConditions{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.windConditions div{
+    display: flex;
+    justify-content: space-around;
+}
+/* new release container */
+.newReleaseContainer{
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.newReleaseContainer p{
+    padding: 1rem 0 0 0;
+}
+/* .spotlight contrainer one */
+.spotlightsHolder{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--fourth-color);
+}
+.spotlightOneContainer, .spotlightTwoContainer{
+    background-color: var(--fourth-color);
     margin: 1rem;
-    border: solid 2px black;
+    padding: 1rem;
+    background-color: var(--fifth-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
 }
-main div {
-    border: solid 2px black;
+.spotlightOneContainer img{
+    background-color: ivory;
+    border: solid 1px black;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 20px 50px;
+    padding: 1rem 1.5rem .5rem 1.5rem;
+    margin: 1rem
+}
+.spotlightTwoContainer img{
+    background-color: var(--third-color);
+    border: solid 1px black;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 20px 50px;
+    padding: 1rem 1.5rem .5rem 1.5rem;
+    margin: 1rem
+}
+.spotlightOneContainer p, .spotlightTwoContainer p{
+    margin: .6rem;
 }
