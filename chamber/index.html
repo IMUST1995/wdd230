@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,20 +66,28 @@
         </div>
         <div class="weatherContainer">
             <h2>Weather</h2>
-            <div>
-                <div class="weatherImgContainer">
-                    <img class="imgWeather" src="https://play-lh.googleusercontent.com/xnp4bOz1uV-AzKnEqz1LPNJ4Q3P2GAxFqSfXCanCH0AzEBzUGNqM9VtNU5K_QCxUYVSG=w480-h960-rw" alt="weather">
-                    <p>33&#176</p>
+            <div class="conditionsWeatherContainer">
+                <div class="titleImgWeatherContainer">
+                    <div class="weatherImgContainer">
+                        <img class="imgWeather" src="https://play-lh.googleusercontent.com/xnp4bOz1uV-AzKnEqz1LPNJ4Q3P2GAxFqSfXCanCH0AzEBzUGNqM9VtNU5K_QCxUYVSG=w480-h960-rw" alt="weather">
+                    </div>
+                    <div class="gradesContainer">
+                        <p>33&#176;C</p>
+                    </div>
                 </div>
-                <p class="conditionsWeather"><strong>Partly Cloudy</strong></p>
+                <div>
+                    <p class="conditionsWeather">
+                        <strong>Partly Cloudy</strong>
+                    </p>
+                </div>
             </div>
             <hr>
             <div class="windConditions">
-                <div>
+                <div class="windConditions1">
                     <p>Wing Speed:</p>
                     <p>2.5km/h</p>
                 </div>
-                <div>
+                <div class="windConditions2">
                     <p>Wind Chill:</p>
                     <p>N/A</p>
                 </div>
@@ -85,21 +98,45 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum sed temporibus possimus aperiam, porro adipisci atque dolorum placeat illo est hic, consequuntur cum vitae unde nobis ducimus sunt fugiat maiores distincti</p>
         </div>
         <div class="spotlightsHolder">
-            <div class="spotlightOneContainer smallSpot">
+            <div class="spotlightOneContainer smallSpot mediumSpotLight">
                 <h2>Thankful Transport</h2>
-                <img class="truck" src="images/truck.svg" alt="truck">
-                <h3>"We get it there for you!"</h3>
-                <p>hello@thankfultransport.com</p>
-                <p>+720-555-5555 | <a href="">Website</a></p>
+                <div class="spotLightImgContainer">
+                    <img class="truck" src="images/truck.svg" alt="truck">
+                </div>
+                <div class="spotlightContactInformation">
+                    <h3>"We get it there for you!"</h3>
+                    <p>hello@thankfultransport.com</p>
+                    <p>+720-555-5555 | 
+                        <a href="">Website</a>
+                    </p>
+                </div>
             </div>
-            <div class="spotlightTwoContainer smallSpot">
+            <div class="spotlightTwoContainer smallSpot mediumSpotLight">
                 <h2>Remodeling Denver</h2>
-                <img class="house" src="images/whiteHome.png" alt="home">
-                <h3>"All like new!"</h3>
-                <p>hello@remodelingdenver.com</p>
-                <p>+720-555-5555 | <a href="">Website</a></p>
+                <div class="spotLightImgContainer">
+                    <img class="house" src="images/whiteHome.png" alt="home">
+                </div>
+                <div class="spotlightContactInformation">
+                    <h3>"All like new!"</h3>
+                    <p>hello@remodelingdenver.com</p>
+                    <p>+720-555-5555 | 
+                        <a href="">Website</a>
+                    </p>
+                </div>
             </div>
-            <div class="spotlightThreeContainer smallSpot">spotlight 3</div>
+            <div class="spotlightThreeContainer smallSpot mediumSpotLight" id="thirdSpotContainer">
+                <h2>Homenade food</h2>
+                <div class="spotLightImgContainer">
+                    <img class="house" src="images/whiteHome.png" alt="home">
+                </div>
+                <div class="spotlightContactInformation">
+                    <h3>"The real flavor!"</h3>
+                    <p>hello@therealflavor.com</p>
+                    <p>+720-555-5555 | 
+                        <a href="">Website</a>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="joinContainer">
             <button class="btnJoinContainer">
@@ -129,3 +166,15 @@
     <script src="scripts/script.js"></script>s
 </body>
 </html>
+1.You have horizontal scrolling in your small and medium view. Spotlight three information is missing in large view.
+
+2.CSS validator show the following error
+URI : https://imust1995.github.io/wdd230/chamber/styles/medium.css
+55		Value Error : padding auto is not a padding value : auto 2rem
+
+3. HTML validator show the following error
+Error: Character reference was not terminated by a semicolon.
+
+At line 67, column 31
+
+     <p>33&#176</p>↩
