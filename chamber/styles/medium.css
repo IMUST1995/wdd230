@@ -58,7 +58,7 @@
         font-size: 2rem;
     }
     .btnJoinContainer{
-        padding: auto 2rem;
+        padding: 1rem 2rem;
         background-color: var(--third-color);
         color: var(--fifth-color);
         cursor: pointer;
