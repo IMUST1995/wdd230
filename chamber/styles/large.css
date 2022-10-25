@@ -75,7 +75,7 @@
         padding: 0;
         cursor: pointer;
     }
-    .eventContainer, .weatherContainer, .joinContainer{
+    .eventContainer, .joinContainer{
         font-size: smaller;
     }
     /* .spotlights container */
@@ -106,14 +106,14 @@
     }
     .weatherContainer h2{
         margin: 0;
-    }
-    .conditionsWeatherContainer{
-        text-align: end;
+        font-size: 1.2rem;
     }
     .weatherImgContainer{
-        width: 100%;
-        padding: 0;
-        margin: 0;
+        max-width: 50%;
+        font-size: small;
+    }
+    div.gradesContainer p{
+        font-size: 1.6;
     }
     .imgWeather{
         max-width: 100%;
@@ -129,10 +129,7 @@
         text-align: end;
     }
     hr, .windConditions{
-       /*  background-color: rgb(128, 128, 128);
-        margin: 0;
-        padding: 0; */
-        display: none;
+       font-size: small;
     }
     img.house, img.truck{
         max-width: 100%;

@@ -20,7 +20,7 @@
         <span id="banner"></span>
         <div class="mainDivHeader">
             <div class="logoContainer">
-                <img class="logo" src="images/logo/logo_small.png" alt="logo DCC">
+                <img class="logo" src="images/logoSmall.webp" alt="logo DCC">
             </div>
             <nav>
                 <div class="smallHead" id="Title">
@@ -47,12 +47,30 @@
         </div>
     </header>
     <main>
-        <div class="heroContainer">
+        <!-- <div class="heroContainer">
             <img id="heroImg" src="images/denverLandscape.jpg" alt="denver landscape" loading="lazy"> 
-            <!-- <img src="https://www.worldatlas.com/r/w1300-q80/upload/34/95/6f/shutterstock-217213000.jpg" alt="denver city"> -->
             <h2>Welcome to Denver</h2>
             <div class="btnJoin">Join the Chamber</div>
-        </div>
+        </div> -->
+
+        <!-- figuresegmetn -->
+        <!-- <figure class="heroContainer">
+            <img id="heroImg" src="images/week06images/wdd230.webp" alt="denver landscape" loading="lazy"
+            srcset="images/week06images/wddimg200.webp 200w,
+            images/week06images/wddimg800.webp 800w,
+            images/week06images/wddimg500.webp 500w
+            ">
+            <figcaption>Img for the assingment</figcaption> 
+        </figure>-->
+        <picture class="heroContainer">
+                <source media="(min-width: 960px)" srcset="images/week06images/wddimg800.webp">
+                <source media="(min-width: 480px)" srcset="images/week06images/wddimg1100.webp">
+                <source media="(min-width: 200px)" srcset="images/week06images/wddimg200.webp">
+                <img src="images/whiteHome.png" alt="">
+            
+            <h2>Welcome to Denver</h2>
+            <div class="btnJoin">Join the Chamber</div>
+        </picture>
         <div class="eventContainer">
             <h3>Ribbon Cutting</h3>
             <h4>The Diamond Shack</h4>
@@ -80,11 +98,13 @@
             <div class="windConditions">
                 <div class="windConditions1">
                     <p>Wing Speed:</p>
-                    <p>2.5km/h</p>
+                    <p><span class="windSpeedHolder"></span> mi/h</p>
                 </div>
                 <div class="windConditions2">
                     <p>Wind Chill:</p>
-                    <p>N/A</p>
+                    <p>
+                        <span class="windChillHolder"></span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -158,6 +178,7 @@
         </div>
 
     </footer>
-    <script src="scripts/script.js"></script>s
+    <script src="scripts/script.js"></script>
+    <script src='scripts/windchill.js'></script>
 </body>
 </html>

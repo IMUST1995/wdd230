@@ -53,6 +53,12 @@
     .weatherContainer {
         grid-column: 3 / 4;
         grid-row: 5 / 6;
+        
+    }
+    .conditionsWeatherContainer{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
     }
     .heroContainer h2{
         font-size: 2rem;
@@ -74,16 +80,6 @@
         background-color: var(--fifth-color);
         color: var(--first-color);
         border: solid 1px var(--first-color);
-    }
-    .weatherContainer{
-        max-width: 100%;
-    }
-    .weatherContainer img{
-        margin: 1rem;
-        max-width: 100%;
-    }
-    .titleImgWeatherContainer div{
-        width: 50%;
     }
     .mediumSpotLight{
         flex-wrap: wrap;
