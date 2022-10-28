@@ -27,6 +27,13 @@ main{
 .movie img{
     width: 100%;
 }
+img[data-src] {
+    filter: blur(0.2em);
+    }
+img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
 .movie{
     width: 300px;
     margin: 1rem;
