@@ -110,11 +110,8 @@
     }
     .weatherImgContainer{
         max-width: 50%;
-        font-size: small;
     }
-    div.gradesContainer p{
-        font-size: 1.9rem;
-    }
+
     .imgWeather{
         max-width: 100%;
         border-radius: 15px 14px;

@@ -19,7 +19,3 @@ if(temperature <= 50.0 && windSpeed >= 3.0){
 else{
     windChillHolder.innerHTML = 'N/A'
 }
-
-
-
-console.log(currentWindChillFahrenheit)
