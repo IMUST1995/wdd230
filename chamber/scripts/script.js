@@ -44,13 +44,13 @@ function differenceDaysBetweenVisits(date){
     const month = date.getMonth()
     const year = date.getFullYear()
     const firstVisitDay = `${month}/${day}/${year}`
-
-    const date1 = new Date(localStorage.getItem('visitDate'))
+    const storedValue = localStorage.getItem('visitDate')
     const daysSinceLastVisitContainer = document.querySelector("#daysSinceLastVisit") 
-    console.log(date1)
-    if (!date1){
+
+    if (!storedValue){
         localStorage.setItem('visitDate', firstVisitDay)
     } else{
+        const date1 = new Date(storedValue)
         const day2 = date.getDate()
         const month2 = date.getMonth()
         const year2 = date.getFullYear()
