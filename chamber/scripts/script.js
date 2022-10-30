@@ -5,46 +5,16 @@ function responsiveMenu(){
     icon.addEventListener('click', () => {
         smallHead.classList.toggle('displayNone')
         smallMenu.classList.toggle('displayNone');
-        /* icon.classList.toggle('open'); */
-})
-    /* const iconX = document.querySelector('.iconX');
-    iconX.addEventListener('click', () => {
-        smallHead.classList.toggle('displayNone')
-        smallMenu.classList.toggle('displayNone');
-        iconX.classList.toggle('open');
-    }) */
+    })
 }
-
-
-/* function panelDate(){
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    function getDay(date, dayNames){
-        let number = date.getDay()
-        return dayNames[number]
-    }
-
-    function getMonth(date, monthNames){
-        let number = date.getMonth()
-        return monthNames[number]
-    }
-    const date = new Date();
-    const year = date.getFullYear();
-    const DayNumber = date.getDate()
-    const day = getDay(date, dayNames)
-    const month = getMonth(date, monthNames)
-    const dateHeader = document.getElementById('dateHeader');
-    dateHeader.innerHTML = `${day}, ${DayNumber} ${month} ${year}`
-}
- */
 
 const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const date = new Date();
-let number = date.getDay()
-const day = dayNames[number]
-let numberMonth = date.getMonth()
+let numberDay = date.getDay()
+const day = dayNames[numberDay]
+let numberMonth = date.getDay()
 const month = monthNames[numberMonth]
 const year = date.getFullYear();
 const DayNumber = date.getDate()
@@ -57,14 +27,43 @@ personalInfo.innerHTML = `&copy ${year} | Denver Chamber of Commerce | Zeir Brai
 const currentDate = document.getElementById('currentDate');
 currentDate.innerHTML = `Last updated: ${document.lastModified}`
 
-/* panelDate() */
+
 responsiveMenu()
 
 /* banner */
 
-if(number == 3){
+if(numberDay == 3){
     const spanBanner = document.querySelector('#banner')
     spanBanner.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
     banner.classList.add('banner')
 }
-/* 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. */
+
+/* localstorage display */
+function differenceDaysBetweenVisits(date){
+    const day = date.getDate()
+    const month = date.getMonth()
+    const year = date.getFullYear()
+    const firstVisitDay = `${month}/${day}/${year}`
+
+    const date1 = new Date(localStorage.getItem('visitDate'))
+    const daysSinceLastVisitContainer = document.querySelector("#daysSinceLastVisit") 
+    console.log(date1)
+    if (!date1){
+        localStorage.setItem('visitDate', firstVisitDay)
+    } else{
+        const day2 = date.getDate()
+        const month2 = date.getMonth()
+        const year2 = date.getFullYear()
+        const date2 = new Date(`${month2}/${day2}/${year2}`)
+        /* const getDifferenceInDays = (date1, date2) */
+        const diffInMs = Math.abs(date2 - date1);
+        const result =  diffInMs / (1000 * 60 * 60 * 24);
+        if(result > 0){
+            daysSinceLastVisitContainer.innerHTML = `Days since last Visit ${result}`
+        }
+    }
+
+}
+differenceDaysBetweenVisits(date)
+
+
