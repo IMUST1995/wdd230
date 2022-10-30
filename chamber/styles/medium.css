@@ -106,4 +106,12 @@
         flex-wrap: wrap;
         margin: 0 1rem;
     }
+    /* discoverPage */
+    .imgDiscoverContainer:hover{
+        transform: scale(1.05);
+        transition: ease .5s;
+    }
+    .discoverContainer{
+        margin-bottom: 1rem;
+    }
 }

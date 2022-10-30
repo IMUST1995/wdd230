@@ -132,4 +132,7 @@
         max-width: 100%;
         padding: .5rem;
     }
+    div.discoverContainer div p{
+        margin: 1rem 3rem 0 3rem;
+    }
 }

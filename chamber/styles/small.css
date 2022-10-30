@@ -487,3 +487,69 @@ main{
 .titleImgWeatherContainer{
     width: 100%;
 }
+/* discover page */
+.mainDiscover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.sectionDiscoverContainer{
+    margin: 1rem 1rem 1rem 0;
+}
+.discoverContainer{
+    max-width: 100%;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+}
+.imgDiscoverContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    transition: ease .7s;
+}
+.imgDiscoverContainer img{
+    max-width: 100%;
+    filter: blur(0em);
+    transition: filter 1s;
+    border-radius: 20px 90px;
+    box-shadow: 2px 2px 5px black;
+}
+img[data-src] {
+    filter: blur(0.2em);
+}
+.demographicsContainer h2{
+    text-align: center;
+    margin: 2rem 0;
+}
+.demographicsContainer p{
+    margin: 1.5rem;
+    line-height: 1.5rem;
+}
+.demographicsContainer ul{
+    background-color: var(--fourth-color);
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bolder;
+    line-height: 1.3rem;
+}
+.demographicsContainer li{
+    margin: 1rem;
+}
+.sectionDiscoverContainer{
+    text-align: center;
+}
+.sectionDiscoverContainer h3{
+    font-size: 1.5rem;
+}
+div.discoverContainer div p{
+    margin: 1rem 2rem 0 2rem;
+    line-height: 1.3rem;
+}
