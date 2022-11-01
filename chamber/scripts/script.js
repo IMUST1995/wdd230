@@ -40,13 +40,15 @@ if(numberDay == 3){
 
 /* localstorage display */
 function differenceDaysBetweenVisits(date){
+    /* a date to be storage => */
     const day = date.getDate()
     const month = date.getMonth()
     const year = date.getFullYear()
     const firstVisitDay = `${month}/${day}/${year}`
     const storedValue = localStorage.getItem('visitDate')
+    /* select element to display info */
     const daysSinceLastVisitContainer = document.querySelector("#daysSinceLastVisit") 
-
+    /* if there is not a value that we need inthe local storage we will set it, it means that is the first visit, otherwise we can get that value and sotage as the date1 then we can set a value with the current day. */
     if (!storedValue){
         localStorage.setItem('visitDate', firstVisitDay)
     } else{
@@ -55,9 +57,8 @@ function differenceDaysBetweenVisits(date){
         const month2 = date.getMonth()
         const year2 = date.getFullYear()
         const date2 = new Date(`${month2}/${day2}/${year2}`)
-        /* const getDifferenceInDays = (date1, date2) */
-        const diffInMs = Math.abs(date2 - date1);
-        const result =  diffInMs / (1000 * 60 * 60 * 24);
+        const difference = Math.abs(date2 - date1);
+        const result =  difference / (1000 * 60 * 60 * 24);
         if(result > 0){
             daysSinceLastVisitContainer.innerHTML = `Days since last Visit ${result}`
         }
