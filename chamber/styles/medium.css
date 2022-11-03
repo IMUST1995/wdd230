@@ -107,9 +107,13 @@
         margin: 0 1rem;
     }
     /* discoverPage */
+    .imgDiscoverContainer{
+        transition: ease 1s;
+    }
     .imgDiscoverContainer:hover{
-        transform: scale(1.05);
-        transition: ease .5s;
+        transform: scale(1.03);
+        transition: ease 1s;
+        border-radius: 50%;
     }
     .discoverContainer{
         margin-bottom: 1rem;

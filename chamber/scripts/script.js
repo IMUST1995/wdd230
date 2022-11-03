@@ -34,6 +34,7 @@ responsiveMenu()
 
 if(numberDay == 3){
     const spanBanner = document.querySelector('#banner')
+    spanBanner.style.margin = "1rem 1rem 0 1rem"
     spanBanner.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
     banner.classList.add('banner')
 }
@@ -61,6 +62,8 @@ function differenceDaysBetweenVisits(date){
         const result =  difference / (1000 * 60 * 60 * 24);
         if(result > 0){
             daysSinceLastVisitContainer.innerHTML = `Days since last Visit ${result}`
+            /* I added this las line to update the visit's date */
+            localStorage.setItem('visitDate', firstVisitDay)
         }
     }
 
