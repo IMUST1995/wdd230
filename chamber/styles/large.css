@@ -135,4 +135,15 @@
     div.discoverContainer div p{
         margin: 1rem 3rem 0 3rem;
     }
+    /* -------Form styles.------- */
+    .mainForm{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    form{
+        grid-column: 1 / 13;
+    }
+    form fieldset{
+        max-width: 40%;
+    }
 }

@@ -106,12 +106,6 @@ main img{
 .sitePurpose{
     margin: 2rem 0rem 0rem;
 }
-main{
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    margin: .5rem;
-}
 footer p{
     margin: 1rem;
     color: var(--fifth-color);
@@ -272,7 +266,7 @@ main div{
     margin: 1rem;
 }
 main{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
@@ -283,7 +277,7 @@ main{
 .joinContainer{
     grid-area: joinContainer;
 }
-/* hero styles */
+/* --------hero styles------- */
 .heroContainer{
     padding: 0;
     margin: 0;
@@ -350,13 +344,7 @@ main{
     padding: 0;
     margin-top: .5rem;
 }
-/* wheather container */
-
-
-
-/* delete this future myself */
-
-/* WEATHER SECTION */
+/* ---------WEATHER SECTION ---------*/
 .weatherContainer{
     border-radius: 1rem;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
@@ -409,7 +397,7 @@ main{
 /* .windConditions div{
 
 } */
-/* new release container */
+/* -------new release container ---------*/
 .newReleaseContainer{
     border-radius: 1rem;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
@@ -421,7 +409,7 @@ main{
 .newReleaseContainer p{
     padding: 1rem 0 0 0;
 }
-/* .spotlight contrainer one */
+/* --------.spotlight contrainer one ------*/
 .spotlightsHolder{
     max-width: 100%;
     display: flex;
@@ -487,7 +475,7 @@ main{
 .titleImgWeatherContainer{
     width: 100%;
 }
-/* discover page */
+/*--------discover page---------- */
 .mainDiscover{
     display: flex;
     flex-direction: column;
@@ -552,4 +540,40 @@ img[data-src] {
 div.discoverContainer div p{
     margin: 1rem 2rem 0 2rem;
     line-height: 1.3rem;
+}
+/* -------Form styles.------- */
+.mainForm{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+form{
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+form fieldset{
+    color: var(--first-color);
+    max-width: 90%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px #3c374446;
+    width: 100%;
+}
+form fieldset label{
+    margin: .5rem;
+    color: var(--first-color);
+    margin: .8rem;
+}
+form fieldset label input{
+    display: block;
+    background-color: ivory;
+    border: solid #3c374429
 }
