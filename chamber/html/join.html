@@ -47,12 +47,42 @@
         </div>
     </header>
     <main class="mainform">
-        <form action="/thankyou.html" method="get">
-            <label for="fname" value="">First name:</label>
-            <input type="text" id="fname" name="fname">
-            
-            <label for="lname" value="">Last name:</label>
-            <input type="text" id="lname" name="lname">
+        <form 
+        method="get"
+        action="/thankyou.html">
+            <fieldset>
+                <Legend>Form</Legend>
+                <label for="fname" value="">First name*:
+                    <input type="text" 
+                        id="fname" 
+                        name="fname" required>
+                </label>
+                <label for="lname" value="">Last name*:
+                    <input type="text" 
+                        id="lname" 
+                        name="lname"
+                        required>
+                </label>
+                <label for="email">E-mail*
+                    <input type="email" 
+                        placeholder="username@gmail.com"
+                        required>
+                </label>
+                <label for="phone">Enter your phone number*:
+                    <input type="tel" 
+                        id="phone" 
+                        name="phone"
+                        placeholder="7328123212"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </label>
+                <label for="businessName">Business Name
+                    <input type="text" 
+                        id="businessName"
+                        title="City where you were born." placeholder="business Name">
+                </label>
+            </fieldset>
+            <input type='submit'
+                value="Join the Chamber">
         </form>
     </main>
     <footer>
