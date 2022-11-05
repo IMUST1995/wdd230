@@ -53,9 +53,12 @@
             <fieldset>
                 <Legend>Form</Legend>
                 <label for="fname" value="">First name*:
-                    <input type="text" 
+                    <input 
+                        type="text" 
                         id="fname" 
-                        name="fname" required>
+                        name="fname" 
+                        required
+                        >
                 </label>
                 <label for="lname" value="">Last name*:
                     <input type="text" 
@@ -72,16 +75,56 @@
                     <input type="tel" 
                         id="phone" 
                         name="phone"
+                        minlength="7"
                         placeholder="7328123212"
-                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        pattern="[0-9]{7}"
+                        required
+                        >
                 </label>
                 <label for="businessName">Business Name
-                    <input type="text" 
+                    <input 
+                        type="text" 
                         id="businessName"
-                        title="City where you were born." placeholder="business Name">
+                        title="Only letters, numbers, hyphens and spaces"
+                        pattern="^[\w\s\-]{7, 90}$"
+                    >
                 </label>
             </fieldset>
-            <input type='submit'
+            <fieldset class="membershipContainer">
+                <legend>Membership Level</legend>
+                <label class="radioMembership"><input 
+                    type="radio" 
+                    name="membership" 
+                    id=""
+                    >NP Membership is for non profit organizations and there is no fee.</label>
+                <label class="radioMembership"><input 
+                    type="radio" 
+                    name="membership" 
+                    id=""
+                    > 
+                    Bronze Membership</label>
+                <label class="radioMembership"><input 
+                    type="radio" 
+                    name="membership" 
+                    id=""
+                    > 
+                    Silver Membership</label>
+                <label class="radioMembership"><input 
+                    type="radio" 
+                    name="membership" 
+                    id=""
+                    > 
+                    Gold Membership</label>
+                <label class="textareaLabel" for="comments">Add some comments here:
+                    <textarea 
+                    name="comments" 
+                    rows="4" 
+                    cols="30"
+                    value=""
+                    ></textarea>
+                </label>
+            </fieldset>
+            <input class="formButton" type='submit'
                 value="Join the Chamber">
         </form>
     </main>

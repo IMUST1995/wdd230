@@ -575,5 +575,58 @@ form fieldset label{
 form fieldset label input{
     display: block;
     background-color: ivory;
-    border: solid #3c374429
+    border: 1px solid #3c374429;
+    border-radius: 1rem;
+    height: 44px;
+    padding: .4rem 1rem;
+}
+form fieldset label input:required{
+    border: solid 2px rgba(255, 0, 0, 0.258)
+}
+form fieldset label input:required:valid{
+    border: solid var(--fourth-color);
+}
+form fieldset label input:valid{
+    border: solid var(--fourth-color);
+}
+.formButton{
+    font-size: 1.2rem;
+    height: 44px;
+    cursor: pointer;
+    border: 1px solid #3c374429;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    transition: .4s;
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+}
+.formButton:hover{
+    transform: scale(.99);
+    transition: all ease-in .4s;
+    background-color: var(--fifth-color);
+    color: var(--first-color);
+    border: solid 1px var(--first-color);
+}
+.membershipContainer label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.membershipContainer label input{
+    margin-right: 1rem;
+}
+.membershipContainer label textarea{
+    overflow: hidden;
+    background-color: ivory;
+    border: 1px solid #3c374429;
+    border-radius: 1rem;
+    height: 44px;
+    padding: .4rem 1rem;
+    margin-top: 1rem;
+}
+.textareaLabel{
+    display: flex;
+    flex-direction: column;
+    
 }
