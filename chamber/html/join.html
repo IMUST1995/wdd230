@@ -84,7 +84,7 @@
                 <label for="businessName">Business Name
                     <input 
                         type="text" 
-                        id="businessName"
+                        name="businessName"
                         title="Only letters, numbers, hyphens and spaces"
                         pattern="^[\w\s\-]{7, 90}$"
                     >
@@ -115,7 +115,7 @@
                     id=""
                     > 
                     Gold Membership</label>
-                <label class="textareaLabel" for="comments">Add some comments here:
+                <label class="textareaLabel" for="comments">Describe your business:
                     <textarea 
                     name="comments" 
                     rows="4" 
@@ -123,6 +123,14 @@
                     value=""
                     ></textarea>
                 </label>
+                <input 
+                type="hidden" 
+                name="date" 
+                id="currentTime"> 
+                <input 
+                type="hidden" 
+                name="time" 
+                id="formDate">
             </fieldset>
             <input class="formButton" type='submit'
                 value="Join the Chamber">

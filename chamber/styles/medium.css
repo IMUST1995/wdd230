@@ -118,4 +118,17 @@
     .discoverContainer{
         margin-bottom: 1rem;
     }
+    .thankYouh1{
+        position: absolute;
+        top: 5rem;
+        left: 4rem;
+        font-size: 2.5rem;
+    }
+    .welcomeh2{
+        position: absolute;
+        bottom: 4rem;
+        right: 2rem;
+        margin-left: 3rem;
+        font-size: 1.8rem;
+    }
 }

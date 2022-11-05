@@ -146,4 +146,17 @@
     form fieldset{
         max-width: 40%;
     }
+    .thankYouh1{
+        position: absolute;
+        top: 7rem;
+        left: 6rem;
+        font-size: 3rem;
+    }
+    .welcomeh2{
+        position: absolute;
+        bottom: 10rem;
+        right: 5rem;
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
 }

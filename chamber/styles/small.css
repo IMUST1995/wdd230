@@ -630,3 +630,26 @@ form fieldset label input:valid{
     flex-direction: column;
     
 }
+/* -----------thankyoufor join section---------- */
+.thankYouContainer{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-color: ivory;
+}
+.thankYouPicture{
+    max-width: 100%;
+    margin: 0;
+    opacity: .5;
+}
+.thankYouh1{
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+}
+.welcomeh2{
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    margin-left: 3rem;
+}
