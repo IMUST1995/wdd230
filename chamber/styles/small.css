@@ -305,8 +305,8 @@ main{
     color: var(--fifth-color);
     padding: .6rem;
     position: absolute;
-    bottom: 1rem;
-    right: .5rem;
+    bottom: 2rem;
+    right: 1.5rem;
     cursor: pointer;
     border: 1px solid var(--fifth-color);
     border-radius: 2rem;

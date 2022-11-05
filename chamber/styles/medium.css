@@ -64,6 +64,7 @@
         font-size: 2rem;
     }
     .btnJoinContainer{
+        text-align: center;
         padding: 1rem 2rem;
         background-color: var(--third-color);
         color: var(--fifth-color);
@@ -118,6 +119,7 @@
     .discoverContainer{
         margin-bottom: 1rem;
     }
+/* --------------form section---------- */    
     .thankYouh1{
         position: absolute;
         top: 5rem;
@@ -130,5 +132,9 @@
         right: 2rem;
         margin-left: 3rem;
         font-size: 1.8rem;
+        
+    }
+    form fieldset{
+        max-width: 80%;
     }
 }
