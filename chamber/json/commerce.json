@@ -2,7 +2,7 @@
     "commerces": [
       {
         "id": 1,
-        "name": "Rodizio Grill Brazilian Steakhouse Denver",
+        "name": "Rodizio Grill Brazilian",
         "address": "1801 Wynkoop St, Denver, CO 80202",
         "phone": "+13032949277",
         "websiteurl": "https://www.rodiziogrill.com/denver/",
@@ -34,7 +34,7 @@
       },
       {
         "id": 5,
-        "name": "Denver Art Museum",
+        "name": "Art Museum",
         "address": "100 W 14th Ave Pkwy, Denver, CO 80204",
         "phone": "+17208655000",
         "websiteurl": "https://www.denverartmuseum.org/en",
@@ -60,7 +60,7 @@
         "id": 8,
         "name": "Steuben's Uptown",
         "address": "523 E 17th Ave, Denver, CO 80203",
-        "phone": "++13038301001",
+        "phone": "+13038301001",
         "websiteurl": "https://www.steubens.com/",
         "imageurl": "https://images.getbento.com/accounts/755e3018f0321ecda0d6d8342f55ad4e/media/images/31832steubens-shadow.png"
       },

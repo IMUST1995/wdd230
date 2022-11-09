@@ -160,7 +160,7 @@
         font-size: 2rem;
     }
     /* ----------directory----------- */
-    #mainDirectory{
+    .mainDirectory{
         display: grid;
         grid-template-columns: auto auto auto;
     }

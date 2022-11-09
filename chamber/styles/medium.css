@@ -138,8 +138,23 @@
         max-width: 80%;
     }
     /* ----------directory----------- */
-    #mainDirectory{
+    .mainDirectory{
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .cardList{
+        box-shadow: 1px 3px var(--first-color);
+        min-height: 1rem;
+        padding-bottom: 0;
+    }
+    .cardList:nth-child(odd){
+        background-color: var(--fourth-color);
+        color: white;
+    }
+    .cardList div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
