@@ -74,5 +74,4 @@ function diplayListDirectory(main){
     imgs.forEach(img => {
         img.remove()
     })
-
 }
