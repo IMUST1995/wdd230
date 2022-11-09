@@ -223,6 +223,8 @@ transition: ease 1s;
     background-color: #45414a;
     margin: .5rem 0 .4rem 0;
     padding: .3rem;
+    text-align: center;
+    border-radius: 1rem;
 }
 footer{
     display: flex;
@@ -660,17 +662,17 @@ form fieldset label input:valid{
     font-size: 2rem;
 }
 .cardDirectory{
-    background-color: rgb(228, 228, 77);
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 3px var(--first-color);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    min-height: 20rem;
 }
 .imgContainer{
-    background-color: #090C9B;
     max-width: 100%;
 }
 .imgContainer img{
@@ -681,12 +683,18 @@ form fieldset label input:valid{
     text-align: center;
 }
 .commerceAddress{
-    background-color: #481a91;
-    color: white;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
 }
 .commercePhone{
-    background-color: aqua;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
 }
 .commerceWebsite{
-    background-color: #B4C5E4;
+    font-size: 1.4rem;
+    transition: 1s;
+}
+.commerceWebsite:hover{
+    font-size: 1.5rem;
+    transition: all ease .4s;
 }
