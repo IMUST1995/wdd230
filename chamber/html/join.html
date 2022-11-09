@@ -58,6 +58,7 @@
                         type="text" 
                         id="fname" 
                         name="fname" 
+                        pattern="^[A-Za-z]*$"
                         required
                         >
                 </label>
@@ -78,8 +79,8 @@
                         name="phone"
                         minlength="7"
                         placeholder="7328123212"
-                        pattern="[0-9]{7}"
-                        title="Phone number must be seven characters"
+                        pattern="[0-9]{10}"
+                        title="Phone number must be ten characters"
                         required
                         >
                 </label>
@@ -161,7 +162,6 @@
 
     </footer>
     <script src="../scripts/script.js"></script>
-    <script src="../scripts/lazyloading.js"></script>
     <script src="../scripts/form.js"></script>
 </body>
 </html>
