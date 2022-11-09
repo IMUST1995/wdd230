@@ -19,3 +19,7 @@ if(temperature <= 50.0 && windSpeed >= 3.0){
 else{
     windChillHolder.innerHTML = 'N/A'
 }
+
+/* "Welcome back " + firstName + "! You last visited on <strong>" + lvdate + "</strong>."
+
+`Welcome back ${firstName}! You last visited on <strong>"${lvdate}"</strong>.` */

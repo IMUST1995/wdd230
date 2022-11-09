@@ -1,6 +1,4 @@
 const API_URL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json'
-/* const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
-const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=c4fc425f2bdf0be4e46d3bf001bef301&query="' */
 
 const main = document.getElementById('main')
 
