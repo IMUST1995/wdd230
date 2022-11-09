@@ -6,7 +6,7 @@
     main div{
         flex-wrap: wrap;
     }
-    main{
+    #mainHome{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -136,5 +136,10 @@
     }
     form fieldset{
         max-width: 80%;
+    }
+    /* ----------directory----------- */
+    #mainDirectory{
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }

@@ -24,7 +24,7 @@
     main div{
         margin: .3rem;
     }
-    main {
+    #mainHome {
         display: grid;
         grid-template-columns: repeat(8, auto);
         grid-template-rows: repeat(4, auto);
@@ -158,5 +158,10 @@
         right: 5rem;
         margin-left: 3rem;
         font-size: 2rem;
+    }
+    /* ----------directory----------- */
+    #mainDirectory{
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 }

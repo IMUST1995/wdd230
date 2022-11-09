@@ -1,0 +1,76 @@
+{
+    "commerces": [
+      {
+        "id": 1,
+        "name": "Coperta",
+        "address": "400 E 20th Ave, Denver, CO 80205",
+        "phone": "+17207494666",
+        "websiteurl": "https://www.copertadenver.com/",
+        "imageurl": "https://images.getbento.com/accounts/ea2b486d59c4fcf37bc06d47333ca088/media/images/Coperta_Logo_color_FINAL_2.png?w=1000&fit=max&auto=compress,format&h=1000"
+      },
+      {
+        "id": 2,
+        "name": "Walter's303 Pizzeria",
+        "address": "1906 Pearl St, Denver, CO 80203",
+        "phone": "+13038649000",
+        "websiteurl": "https://www.walters303.com/",
+        "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij_LmVW24SrTppeAYIYmmqufmepIZXcCx1g&usqp=CAU"
+      },
+      {
+        "id": 3,
+        "name": "Las Delicias",
+        "address": "439 E 19th Ave, Denver, CO 80203",
+        "phone": "+13038395675",
+        "websiteurl": "https://www.lasdeliciasuptown.com/",
+        "imageurl": "https://static.wixstatic.com/media/01d7e2_67f500f406ec4f1b95c7e1fe3b6550b1~mv2.png/v1/fill/w_118,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo.png"
+      },
+      {
+        "id": 4,
+        "name": "Worth The Boxing",
+        "address": "1999 Pennsylvania St, Denver, CO 80203",
+        "phone": "+13037206071",
+        "websiteurl": "https://wtfboxing.com/",
+        "imageurl": "https://wtfboxing.com/wp-content/uploads/2021/01/orange_and_gray_worth_the_fight_png_transparent_background-1.png"
+      },
+      {
+        "id": 5,
+        "name": "",
+        "address": "",
+        "phone": "",
+        "websiteurl": "",
+        "imageurl": ""
+      },
+      {
+        "id": 6,
+        "name": "Samadhi Yoga Sangha",
+        "address": "639 E 19th Ave, Denver, CO 80203",
+        "phone": "+13037362941",
+        "websiteurl": "https://samadhiyoga.com/",
+        "imageurl": "https://images.squarespace-cdn.com/content/v1/611a881f199d2b38bb4386dc/8d6de158-bf7d-4e91-ad4e-9bd887570241/Samadhi+Logo_web2.png?format=1500w"
+      },
+      {
+        "id": 7,
+        "name": "Overland Sheepskin Co.",
+        "address": "1512 Larimer St #2r, Denver, CO 80202",
+        "phone": "+18888407611",
+        "websiteurl": "https://www.overland.com/stores/denver-co",
+        "imageurl": "https://www.overland.com/images/Overland-Logo.svg"
+      },
+      {
+        "id": 8,
+        "name": "Urban Luxury Salons",
+        "address": "403 16th St Mall 3rd Floor, Denver, CO 80202",
+        "phone": "+13035341221",
+        "websiteurl": "https://www.ulsalons.com/",
+        "imageurl": "https://ulsalons.com/wp-content/uploads/2017/07/Urban-Luxury_Logo-White_w1500px.png"
+      },
+      {
+        "id": 9,
+        "name": "Rioja",
+        "address": "1431 Larimer St, Denver, CO 80202",
+        "phone": "+13038202282",
+        "websiteurl": "https://vivage.com/communities/uptown/",
+        "imageurl": "https://www.riojadenver.com/wp-content/uploads/2020/04/rioja-logo-gold.png"
+      }
+    ]
+}

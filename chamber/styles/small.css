@@ -653,3 +653,40 @@ form fieldset label input:valid{
     right: 2rem;
     margin-left: 3rem;
 }
+/* ------Directory------- */
+.tittleDirectory{
+    text-align: center;
+    margin: 2rem 1rem 2rem 1rem;
+    font-size: 2rem;
+}
+.cardDirectory{
+    background-color: rgb(228, 228, 77);
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px var(--first-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgContainer{
+    background-color: #090C9B;
+    max-width: 100%;
+}
+.imgContainer img{
+    max-width: 100%;
+    background-color: ivory;
+}
+.infoCommerceContainer{
+    text-align: center;
+}
+.commerceAddress{
+    background-color: #481a91;
+    color: white;
+}
+.commercePhone{
+    background-color: aqua;
+}
+.commerceWebsite{
+    background-color: #B4C5E4;
+}
