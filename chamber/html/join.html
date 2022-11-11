@@ -53,7 +53,7 @@
         >
             <fieldset>
                 <Legend>Form</Legend>
-                <label for="fname" value="">First name*:
+                <label for="fname">First name*:
                     <input 
                         type="text" 
                         id="fname" 
@@ -62,14 +62,17 @@
                         required
                         >
                 </label>
-                <label for="lname" value="">Last name*:
+                <label for="lname">Last name*:
                     <input type="text" 
                         id="lname" 
                         name="lname"
                         required>
                 </label>
-                <label for="email">Business Title
-                    <input type="text"
+                <label for="bussinessTitle">Business Title
+                    <input
+                        id="bussinessTitle"
+                        name="bussinessTitle"
+                        type="text"
                         title="Please use only alpha characters, hyphens, and spaces with a minimum of seven characters"
                         pattern="^[A-Za-z\s\-]{7,20}$">
                 </label>
@@ -80,7 +83,7 @@
                 </label>
                 <label for="phone">Enter your phone number*:
                     <input type="tel" 
-                        id="phone" 
+                        id="phone"
                         name="phone"
                         minlength="7"
                         placeholder="7328123212"
@@ -90,7 +93,8 @@
                         >
                 </label>
                 <label for="businessName">Business Name
-                    <input 
+                    <input
+                        id="businessName"
                         type="text" 
                         name="businessName"
                         title="Only letters, numbers, hyphens and spaces"
@@ -122,27 +126,27 @@
                 <label class="radioMembership"><input 
                     type="radio" 
                     name="membership" 
-                    id=""
+                    id="1"
                     >NP membership
                 </label>
                 <label class="radioMembership"><input 
                     type="radio" 
                     name="membership" 
-                    id=""
+                    id="2"
                     > 
                     Bronze Membership
                 </label>
                 <label class="radioMembership"><input 
                     type="radio" 
                     name="membership" 
-                    id=""
+                    id="3"
                     > 
                     Silver membership
                 </label>
                 <label class="radioMembership"><input 
                     type="radio" 
                     name="membership" 
-                    id=""
+                    id="4"
                     > 
                     Gold Membership
                 </label>
@@ -152,6 +156,7 @@
                     rows="4" 
                     cols="30"
                     value=""
+                    pattern="^[A-Za-z0-9\s\-]{4,30}$"
                     ></textarea>
                 </label>
                 <input 
