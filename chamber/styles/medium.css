@@ -153,4 +153,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .cardDirectory:hover a, .cardList:hover a{
+        font-size: 1.6rem;
+        transition: .4s;
+    }
 }
