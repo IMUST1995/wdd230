@@ -123,27 +123,31 @@
             </div>
             <fieldset class="membershipContainer">
                 <legend>Membership Level</legend>
-                <label class="radioMembership"><input 
+                <label class="radioMembership">
+                    <input 
                     type="radio" 
                     name="membership" 
                     id="1"
                     >NP membership
                 </label>
-                <label class="radioMembership"><input 
+                <label class="radioMembership">
+                    <input 
                     type="radio" 
                     name="membership" 
                     id="2"
                     > 
                     Bronze Membership
                 </label>
-                <label class="radioMembership"><input 
+                <label class="radioMembership">
+                    <input 
                     type="radio" 
                     name="membership" 
                     id="3"
                     > 
                     Silver membership
                 </label>
-                <label class="radioMembership"><input 
+                <label class="radioMembership">
+                    <input 
                     type="radio" 
                     name="membership" 
                     id="4"
@@ -152,21 +156,24 @@
                 </label>
                 <label class="textareaLabel" for="comments">Describe your business:
                     <textarea 
+                    id="comments"
                     name="comments" 
                     rows="4" 
                     cols="30"
-                    value=""
-                    pattern="^[A-Za-z0-9\s\-]{4,30}$"
                     ></textarea>
                 </label>
-                <input 
-                type="hidden" 
-                name="date" 
-                id="currentTime"> 
-                <input 
-                type="hidden" 
-                name="time" 
-                id="formDate">
+                <label for="currentTime">
+                    <input 
+                    type="hidden" 
+                    name="date" 
+                    id="currentTime">
+                </label> 
+                <label for="formDate>
+                    <input 
+                    type="hidden" 
+                    name="time" 
+                    id="formDate">
+                </label>
             </fieldset>
             <input class="formButton" 
                 type='submit'
