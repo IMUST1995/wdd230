@@ -68,6 +68,11 @@
                         name="lname"
                         required>
                 </label>
+                <label for="email">Business Title
+                    <input type="text"
+                        title="Please use only alpha characters, hyphens, and spaces with a minimum of seven characters"
+                        pattern="^[A-Za-z\s\-]{7,20}$">
+                </label>
                 <label for="email">E-mail*
                     <input type="email" 
                         placeholder="username@gmail.com"
@@ -89,7 +94,7 @@
                         type="text" 
                         name="businessName"
                         title="Only letters, numbers, hyphens and spaces"
-                        pattern="^[\w\s\-]{7, 90}$"
+                        pattern="/^[A-Za-z\s\-]{7,20}$/i"
                     >
                 </label>
             </fieldset>
@@ -205,4 +210,3 @@
     <script src="../scripts/form.js"></script>
 </body>
 </html>
-2. Your page is missing this part "A business position title field of type text that is not required but only accepts alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression pattern." 3. Validate Accessibility show 2 error
