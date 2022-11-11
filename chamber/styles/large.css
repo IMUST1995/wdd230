@@ -138,13 +138,22 @@
     /* -------Form styles.------- */
     .mainForm{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
     }
     form{
-        grid-column: 1 / 13;
+        display: flex;
+        align-items: scenter;
+        justify-content: center;
+        width: 100%;
+        grid-column: 1 / 2;
     }
     form fieldset{
-        max-width: 40%;
+        width: 40vw;
+    }
+    .membershipsDescriptionContainer{
+        display: none;
     }
     .thankYouh1{
         position: absolute;
@@ -158,6 +167,25 @@
         right: 5rem;
         margin-left: 3rem;
         font-size: 2rem;
+    }
+    .priceMembership{
+        font-weight: 700;
+    }
+    .membershipsDescriptionContainerLarge{
+        width: 50vw;
+        grid-column: 2 / 3;
+        color: var(--first-color);
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        line-height: 1.5rem;
+        padding: 1rem;
+        margin: 2.5rem 1rem 2rem 1rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 3px #3c374446;
     }
     /* ----------directory----------- */
     .mainDirectory{

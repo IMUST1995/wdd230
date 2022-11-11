@@ -132,10 +132,6 @@
         right: 2rem;
         margin-left: 3rem;
         font-size: 1.8rem;
-        
-    }
-    form fieldset{
-        max-width: 80%;
     }
     /* ----------directory----------- */
     .mainDirectory{

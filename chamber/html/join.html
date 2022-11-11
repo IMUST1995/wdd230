@@ -93,32 +93,53 @@
                     >
                 </label>
             </fieldset>
+            <div class="membershipsDescriptionContainer">
+                <div>
+                    <h3>NP Membership</h3>
+                    <p>Is for non profit organizations and there is no fee. <span class="priceMembership">free</span></p>
+                </div>
+                <div>
+                    <h3>Bronze Membership</h3>
+                    <p>Add Insignias and news related with commerce. <span class="priceMembership">$10USD</span></p>
+                </div>
+                <div>
+                    <h3>Silver Membership</h3>
+                    <p>Add acces to law services.
+                    <span class="priceMembership">$30USD</span></p>
+                </div>
+                <div>
+                    <h3>Gold Membership</h3>
+                    <p> Add acces to our database and free pass to our conventions <span>$40USD</span></p>
+                </div>
+            </div>
             <fieldset class="membershipContainer">
                 <legend>Membership Level</legend>
                 <label class="radioMembership"><input 
                     type="radio" 
                     name="membership" 
                     id=""
-                    >NP Membership is for non profit organizations and there is no fee.</label>
-                <label class="radioMembership"><input 
-                    type="radio" 
-                    name="membership" 
-                    id=""
-                    > 
-                    Bronze Membership: Add Insignias and news related with commerce. $10USD
+                    >NP membership
                 </label>
                 <label class="radioMembership"><input 
                     type="radio" 
                     name="membership" 
                     id=""
                     > 
-                    Silver Membership: Add acces to law services $30USD</label>
+                    Bronze Membership
+                </label>
                 <label class="radioMembership"><input 
                     type="radio" 
                     name="membership" 
                     id=""
                     > 
-                    Gold Membership: Add acces to our database and free pass to our conventions $40USD
+                    Silver membership
+                </label>
+                <label class="radioMembership"><input 
+                    type="radio" 
+                    name="membership" 
+                    id=""
+                    > 
+                    Gold Membership
                 </label>
                 <label class="textareaLabel" for="comments">Describe your business:
                     <textarea 
@@ -141,6 +162,25 @@
                 type='submit'
                 value="Join the Chamber">
         </form>
+        <div class="membershipsDescriptionContainerLarge">
+            <div>
+                <h3>NP Membership</h3>
+                <p>Is for non profit organizations and there is no fee. <span class="priceMembership">free</span></p>
+            </div>
+            <div>
+                <h3>Bronze Membership</h3>
+                <p>Add Insignias and news related with commerce. <span class="priceMembership">$10USD</span></p>
+            </div>
+            <div>
+                <h3>Silver Membership</h3>
+                <p>Add acces to law services.
+                <span class="priceMembership">$30USD</span></p>
+            </div>
+            <div>
+                <h3>Gold Membership</h3>
+                <p> Add acces to our database and free pass to our conventions <span>$40USD</span></p>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="firstSectionFooter">
@@ -165,3 +205,4 @@
     <script src="../scripts/form.js"></script>
 </body>
 </html>
+2. Your page is missing this part "A business position title field of type text that is not required but only accepts alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression pattern." 3. Validate Accessibility show 2 error
