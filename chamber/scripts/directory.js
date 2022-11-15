@@ -1,4 +1,4 @@
-const API_URL = '/json/commerce.json'
+const API_URL = '../json/commerce.json'
 
 const main = document.querySelector('main')
 
