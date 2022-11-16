@@ -25,7 +25,12 @@ function website(q){
   const input = document.createElement('input')
   const button = document.createElement('button')
   const buttonImg = document.createElement('img')
+  const label = document.createElement('label')
+  label.htmlFor = 'city'
+  input.name = 'city'
+  input.id = 'city'
   buttonImg.setAttribute('src', 'images/icon-search.svg')
+  buttonImg.setAttribute('alt', 'search button')
   button.appendChild(buttonImg)
   button.id = 'search'
   button.addEventListener('click', () => {
@@ -33,7 +38,8 @@ function website(q){
   })
   input.setAttribute('type', 'text')
   input.placeholder = 'Search'
-  form.appendChild(input)
+  label.appendChild(input)
+  form.appendChild(label)
   form.appendChild(button)
   header.appendChild(form)
 
@@ -74,7 +80,6 @@ function search(value, input){
  apiFetch(url)
  website(q)
 }
-
 
 website(q)
 apiFetch(url)
