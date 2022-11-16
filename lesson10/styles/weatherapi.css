@@ -1,0 +1,88 @@
+:root{
+    --primary-color: #FBFFF1;
+    --secondary-color: #3C3744;
+}
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+header{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #b4c5e485;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #b9b6bf10;
+    box-shadow: 2px 2px 3px #b9b6bf;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem 0rem;
+}
+footer{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+.textFooter{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+form{
+    display: flex;
+}
+input{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+}
+#search{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+}
+#search img{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    max-width: 20px;
+}
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+img#weather-icon{
+    width: 5rem;
+    
+}
+@media(min-width: 35rem){
+
+}

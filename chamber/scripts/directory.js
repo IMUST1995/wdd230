@@ -8,7 +8,6 @@ async function getData(url){
     const data = await res.json()
     const commerces = data.commerces
     showCommerces(commerces, main)
-    console.log(data)
 }
 
 function showCommerces(commerces, main){
