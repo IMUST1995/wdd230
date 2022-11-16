@@ -13,7 +13,6 @@ function website(q){
   header.innerHTML = `<h1>OpenWeatherMap.org API Test</h1>`
   card.classList.add('card')
   main.appendChild(card)
-  console.log(q)
   card.innerHTML = `
     <p>The current temperature in ${q} is <span id="current-temp"></span> &deg;F</p>
     <h3>Current Condition Icon</h3>
@@ -46,7 +45,7 @@ function website(q){
 }
 
 
-async function apiFetch(url, q) {
+async function apiFetch(url) {
   try {
     const response = await fetch(url);
     if (response.ok) {
@@ -66,11 +65,14 @@ function displayResults(weatherData, q){
   const captionDesc = document.querySelector('figcaption');
   currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  const desc = weatherData.weather[0].description;
-
+  let desc = weatherData.weather[0].description;
+  words = desc.split(' ')
+  let newDesc = words.map((word) => { 
+    return word[0].toUpperCase() + word.substring(1); 
+}).join(" ");
   weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = desc;
+  weatherIcon.setAttribute('alt', newDesc);
+  captionDesc.textContent = newDesc;
 }
 
 function search(value, input){
