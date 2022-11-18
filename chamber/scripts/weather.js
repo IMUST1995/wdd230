@@ -11,12 +11,21 @@ async function getData(url){
 }
 
 function diplayWeatherData(data){
+    const imgWeather = document.querySelector('.imgWeather');
+    imgWeather.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
+    const descHolder = document.getElementById('desc')
+    const desc = data.weather[0].description;
+        words = desc.split(' ')
+    let newDesc = words.map((word) => { 
+        return word[0].toUpperCase() + word.substring(1); 
+    }).join(" ");
+    descHolder.innerHTML = newDesc
     const gradesFahrenheit = document.querySelector('#gradesFahrenheit')
     const windChillHolder = document.querySelector('.windChillHolder')
     const temperature = data.main.temp
     const windSpeed = data.wind.speed
     gradesFahrenheit.innerHTML = temperature.toFixed()
-    windSpeedHolder.innerHTML = windSpeed
+    windSpeedHolder.innerHTML = windSpeed 
 
     if(temperature <= 50.0 && windSpeed >= 3.0){
         const currentWindChillFahrenheit = windChillFahrenheit(temperature, windSpeed)

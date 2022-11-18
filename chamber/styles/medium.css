@@ -24,9 +24,9 @@
         max-width: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         grid-column: 1 / span 3;
         grid-row: 3 / 4;
+        align-items: center;
         justify-content: space-around;
     }
 
@@ -37,6 +37,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         border-radius: 1rem;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
         padding: 1rem;
@@ -57,22 +58,25 @@
     }
     .conditionsWeatherContainer{
         display: flex;
-        flex-direction: column;
-        align-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .weatherImgContainer{
+        width: 70%;
+        padding: 0;
     }
     .heroContainer h2{
         font-size: 2rem;
     }
     .btnJoinContainer{
+        max-width: 50%;
         text-align: center;
-        padding: 1rem 2rem;
+        padding: .5rem 1rem;
         background-color: var(--third-color);
         color: var(--fifth-color);
         cursor: pointer;
         border: 1px solid var(--fifth-color);
         border-radius: 2rem;
-        margin: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         transition: all ease-in .5s;
     }
     .btnJoinContainer:hover{
@@ -83,12 +87,9 @@
         border: solid 1px var(--first-color);
     }
     .mediumSpotLight{
-        flex-wrap: wrap;
         font-size: smaller;
+        max-width: 49%;
         margin: 0;
-        max-width: 40%;
-        margin: .2rem;
-        padding: .5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,16 +97,17 @@
 
     .mediumSpotLight img{
         max-width: 100%;
-        padding: 1rem;
         margin: 0;
+        margin-top: 1rem;
     }
     .mediumSpotLight p{
         font-size: 1rem;
+        max-width: 100%;
     }
     .spotlightContactInformation p{
         font-size: small;
-        flex-wrap: wrap;
-        margin: 0 1rem;
+        margin: 0;
+        padding: 0;
     }
     /* discoverPage */
     .imgDiscoverContainer{
