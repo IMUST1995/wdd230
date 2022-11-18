@@ -50,6 +50,11 @@
     }
     .joinContainer {
         grid-area: 4 / 1 / 5 / 3;
+        display: flex;
+        justify-content: space-center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
     }
     .joinContainer p, .joinContainer button{
         font-size: 1rem;
@@ -57,8 +62,11 @@
         padding: 0;
     }
     .btnJoinContainer{
-        font-size: 1.3rem;
-        width: 100;
+        font-size: 1rem;
+        max-width: 100%;
+        text-align: center;
+        padding: .5rem 1rem;
+        margin: 0 0 1rem 0;
     }
     .heroContainer h2{
         font-size: 1.5rem;
