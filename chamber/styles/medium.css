@@ -29,7 +29,9 @@
         align-items: center;
         justify-content: space-around;
     }
-
+    .spotlightCard {
+        width: 100%;
+    }
     .joinContainer {
         grid-column: 1 / span 3;
         grid-row: 4 / 5;

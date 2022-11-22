@@ -77,10 +77,6 @@
         padding: .8rem;
         right: 1rem;
     }
-    
-    .spotlightThreeContainer{
-        display: block;
-    }
     .imgWeather, .truck, .house{
         width: 5rem;
         margin: 0;
@@ -92,21 +88,13 @@
     }
     /* .spotlights container */
     .smallSpot{
-        height: 33%;
         max-width: 100%;
         margin: 0;
         display: flex;
         flex-direction: column;
     }
-    .spotlightContactInformation{
-        max-width: 100%;
-        display: flex;
-    }
     #thirdSpotContainer{
-        display: block;
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .weatherContainer{
         display: flex;
