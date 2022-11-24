@@ -1,5 +1,4 @@
 const API_URL = 'json/commerce.json'
-console.log(API_URL)
 const main = document.querySelector('main')
 
 getData(API_URL, main)
@@ -60,7 +59,7 @@ gridButton.addEventListener('click', () => getData(API_URL))
 const listButton = document.getElementById('listButton')
 listButton.addEventListener('click', () => diplayListDirectory(main))
 
-
+/* Change the view */
 function diplayListDirectory(main){
     main.classList.remove('mainDirectory')
     const cardsCollection = document.getElementsByClassName('cardDirectory')

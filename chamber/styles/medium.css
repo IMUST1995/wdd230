@@ -21,16 +21,8 @@
         grid-row: 2 / 3;
     }
     .spotlightsHolder {
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
         grid-column: 1 / span 3;
         grid-row: 3 / 4;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .spotlightCard {
-        width: 100%;
     }
     .joinContainer {
         grid-column: 1 / span 3;
@@ -88,29 +80,50 @@
         color: var(--first-color);
         border: solid 1px var(--first-color);
     }
-    .mediumSpotLight{
-        font-size: smaller;
-        max-width: 49%;
-        margin: 0;
+    /* ======================================== */
+    .spotlightsHolder{
+        max-height: 45vh;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        align-content: space-around;
+    }
+    .spotlightCard{
+        background-color: var(--fifth-color);
+        border-radius: 1rem;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+        padding: .5rem 0 0 0;
+        width: 48%;
+        height: 100%;
+        margin: .5rem .3rem;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-content: space-around;
+
+    }
+    .spotLightImgContainer {
+        max-width: 90%;
+    }
+    .spotLightImgContainer img {
+        max-width: 70%;
+        background-color: ivory;
+    }
+    #thirdSpotContainer{
+        display: none;
+    }
+    .spotlightContactInformation p, .spotlightContactInformation h3 {
+     margin: .6rem 0 0 0;
+    }
+    /* ====================================== */
+/*     .mediumSpotLight{
     }
 
     .mediumSpotLight img{
-        max-width: 100%;
-        margin: 0;
-        margin-top: 1rem;
     }
     .mediumSpotLight p{
-        font-size: 1rem;
-        max-width: 100%;
     }
     .spotlightContactInformation p{
-        font-size: small;
-        margin: 0;
-        padding: 0;
-    }
+    } */
     /* discoverPage */
     .imgDiscoverContainer{
         transition: ease 1s;

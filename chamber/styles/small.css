@@ -14,7 +14,6 @@
     font-family: var(--second-font), sans-serif;
     color: var(--first-color);
     max-width: 100%;
-    overflow-x: hidden;
 }
 h1, h2, h3, h4{
     font-family: var(--primary-font);
@@ -422,47 +421,35 @@ main{
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    text-align: center;
     border-radius: 1rem;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
-    display: flex;
-    padding: 1rem;
-    text-align: center;
     background-color: var(--fourth-color);
+    height: 90vh;
 }
 .spotlightCard{
-    max-width: 100%;
-    background-color: var(--fourth-color);
-    margin: 1rem 0 0 0;
-    padding: 1rem 0 0 0;
     background-color: var(--fifth-color);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+    padding: .5rem 0 0 0;
+    max-width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
 }
-.spotLightImgContainer{
-    width: 40%;
-    padding: 0;
-    margin: 0;
-}
+/* div.spotLightImgContainer{
+} */
 .spotLightImgContainer img{
+    max-width: 70%;
     background-color: ivory;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    max-width: 100%;
-    border: var(--first-color) 1px solid;
-}
-img.house{
-    background-color: var(--third-color);
 }
 #thirdSpotContainer{
     display: none;
 }
 .spotlightContactInformation p, .spotlightContactInformation h3 {
-    margin-bottom: .3rem;
+ margin: .6rem 0 0 0;
 }
 .titleImgWeatherContainer{
     width: 100%;

@@ -6,15 +6,17 @@
         "address": "1801 Wynkoop St, Denver, CO 80202",
         "phone": "+13032949277",
         "websiteurl": "https://www.rodiziogrill.com/denver/",
-        "imageurl": "https://www.rodiziogrill.com/files/templates/1490/logo-Rodizio01.png"
+        "imageurl": "https://www.rodiziogrill.com/files/templates/1490/logo-Rodizio01.png",
+        "slogan": "Best Grill in the city"
       },
       {
         "id": 2,
-        "name": "Walter's303 Pizzeria",
+        "name": "Walter's 303 Pizzeria",
         "address": "1906 Pearl St, Denver, CO 80203",
         "phone": "+13038649000",
         "websiteurl": "https://www.walters303.com/",
-        "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij_LmVW24SrTppeAYIYmmqufmepIZXcCx1g&usqp=CAU"
+        "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij_LmVW24SrTppeAYIYmmqufmepIZXcCx1g&usqp=CAU",
+        "slogan": "Taste our popeye's pizza!"
       },
       {
         "id": 3,
@@ -22,7 +24,8 @@
         "address": "439 E 19th Ave, Denver, CO 80203",
         "phone": "+13038395675",
         "websiteurl": "https://www.lasdeliciasuptown.com/",
-        "imageurl": "https://static.wixstatic.com/media/01d7e2_67f500f406ec4f1b95c7e1fe3b6550b1~mv2.png/v1/fill/w_118,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo.png"
+        "imageurl": "https://static.wixstatic.com/media/01d7e2_67f500f406ec4f1b95c7e1fe3b6550b1~mv2.png/v1/fill/w_118,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo.png",
+        "slogan": "How many tacos can you eat?"
       },
       {
         "id": 4,
@@ -69,7 +72,7 @@
         "name": "Rioja",
         "address": "1431 Larimer St, Denver, CO 80202",
         "phone": "+13038202282",
-        "websiteurl": "https://vivage.com/communities/uptown/",
+        "websiteurl": "https://www.riojadenver.com/",
         "imageurl": "https://www.riojadenver.com/wp-content/uploads/2020/04/rioja-logo-gold.png"
       }
     ]
