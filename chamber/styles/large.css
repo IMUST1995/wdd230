@@ -35,10 +35,13 @@
         grid-template-columns: repeat(8, auto);
         grid-template-rows: repeat(4, auto);
         }
-    .spotlightsHolder {
+    div.spotlightsHolder {
         grid-area: 1 / 7 / 5 / 9;
+        max-height: 100%;
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
+        align-items: center;
     }
     .eventContainer {
         grid-area: 1 / 1 / 2 / 3;
@@ -92,21 +95,36 @@
     .eventContainer, .joinContainer{
         font-size: smaller;
     }
-    /* .spotlights container */
-    .smallSpot{
-        max-width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-        .mediumSpotLight{
+    /* =============spotlights container =============*/
+    .spotlightCard{
+        background-color: var(--fifth-color);
+        border-radius: 1rem;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+        padding: 0;
+        width: 95%;
         height: 100%;
-        font-size: smaller;
-        max-width: 49%;
-        margin: 0;
+        margin: 0.3rem;
         display: flex;
         align-items: center;
-        justify-content: center;
+        flex-direction: column;
+
+    }
+    .spotlightCard h2{
+        font-size: 1rem;
+    }
+    .spotLightImgContainer {
+        max-width: 60%;
+    }
+    div.spotLightImgContainer img {
+        max-width: 90%;
+        background-color: ivory;
+    }
+    #thirdSpotContainer{
+        display: none;
+    }
+    .spotlightContactInformation p, .spotlightContactInformation h3 {
+     margin: .6rem 0 0 0;
+     font-size: 1rem;
     }
     #thirdSpotContainer{
         display: flex;
