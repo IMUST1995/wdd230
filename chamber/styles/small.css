@@ -239,8 +239,8 @@ footer{
 }
 .locationPinContainer{
     width: 3rem;
+    height: 3rem;
     display: flex;
-    margin: .5rem 0 .5rem .5rem;
 }
 .locationPinContainer img{
     width: 1.5rem;
@@ -598,7 +598,7 @@ form fieldset label input:valid{
 .membershipContainer label input{
     margin-right: .5rem;
 }
-.membershipContainer label textarea{
+textarea{
     overflow: hidden;
     background-color: ivory;
     border: 1px solid #3c374429;
@@ -746,4 +746,57 @@ label.textareaLabel{
 }
 .directoryMenuIcons img{
     max-width: 50px
+}
+/* ===============contact page============== */
+.mainContactPage {
+    display: grid;
+    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contactInformationContainer {
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px #3c374446;
+    padding: 1rem .3rem 2rem .3rem;
+}
+.contactInformationContainer h2 {
+    color: var(--first-color);
+}
+.contactInformationContainer h3 {
+    margin: .3rem 0;
+}
+.imgContactContainer img{
+    max-width: 100%;
+    border-radius: 7rem 13rem;
+}
+div.imgContactContainer {
+    max-width: 100%;
+}
+.imgContactContainer{
+    margin: .5rem 1rem;
+}
+.locationContactContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.locationPinContainerContact {
+    width: 44px;
+    height: 44px;
+}
+.locationContactContainer p{
+    display: flex;
+    align-items: center;
+    color: var(--first-color);
+}
+.locationPinContainerContact img {
+    max-width: 100%;
+    background-color: var(--fourth-color);
 }

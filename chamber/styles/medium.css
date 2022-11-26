@@ -174,4 +174,20 @@
         font-size: 1.6rem;
         transition: .4s;
     }
+    .mainContactPage {
+        display: grid;
+        grid-template-columns: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .locationPinContainerContact {
+        width: 44px;
+        height: 44px;
+    }
+    .locationContactContainer {
+        margin-bottom: 1rem;
+    }
+    .contactInformationContainer{
+        padding: .5rem;
+    }
 }

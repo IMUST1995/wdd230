@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="byu web development course">
+    <link rel='icon' href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&family=Figtree:wght@300&family=Zen+Maru+Gothic:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Denver's Chamber of commerce</title>
+</head>
+<body>
+    <header>
+        <span id="banner"></span>
+        <div class="mainDivHeader">
+            <div class="logoContainer">
+                <a href="index.html">
+                    <img class="logo" src="images/logoSmall.webp" alt="logo DCC">
+                </a>
+            </div>
+            <nav>
+                <div class="smallHead" id="Title">
+                    <h1>Denver</h1>
+                    <h2>Chamber of Commerce</h2>
+                    <p id="dateHeader"></p>
+                </div>
+                <ul class="smallMenu displayNone">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="iconsContainer">
+                    <div class="socialMediaContainerIcons">
+                        <a href="https://facebook.com/" target="_blank">
+                            <img class="iconMedia" src="images/facebookIcon.svg" alt="facebook.com">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img class="iconMedia" src="images/linkedinIcon.svg" alt="facebook.com">
+                        </a>
+                    </div>
+                    <div class="iconContainer">
+                        <span class="icon">&#9776;</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="mainContactPage">
+        <div class="contactInformationContainer">
+            <h2>Contact our representative</h2>
+            <div class='imgContactContainer'>
+                <img src="images/larry.webp" alt="larry brady picture">
+            </div>
+            <h3>Larry Brady</h3>
+            <p>We will be happy to help you</p>
+            <div class="locationContactContainer">
+                <div class="locationPinContainerContact">
+                    <a href="https://goo.gl/maps/ReLhHmP1Ym7TwNpB8">
+                        <img src="images/pinLocation.png" alt="location">
+                    </a>
+                </div>
+                <p>1770 Broadway, Denver, CO 80202</p>
+            </div>
+            <p>Phone Number: +1(720)555-5555</>
+        </div>
+        <form 
+        method="get"
+        action="thankyouContact.html"
+        >
+            <fieldset>
+                <Legend>Contact Us</Legend>
+                <label for="fname">First name*:
+                    <input 
+                        type="text" 
+                        id="fname" 
+                        name="fname" 
+                        pattern="^[A-Za-z]*$"
+                        required
+                        >
+                </label>
+                <label for="email">E-mail*
+                    <input 
+                        id="email"
+                        type="email" 
+                        placeholder="username@gmail.com"
+                        required>
+                </label>
+                <label for="phone">Enter your phone number*:
+                    <input type="tel" 
+                        id="phone"
+                        name="phone"
+                        minlength="7"
+                        placeholder="7205555555"
+                        pattern="[0-9]{10}"
+                        title="Phone number must be ten characters"
+                        required
+                        >
+                </label>
+                <label class="textareaLabel" for="comments">Comments: 
+                    <textarea 
+                    id="comments"
+                    name="comments" 
+                    rows="4" 
+                    cols="30"
+                    ></textarea>
+                </label>
+            </fieldset>
+            <input class="formButton" 
+                type='submit'
+                value="Contact Now">
+        </form>
+    </main>
+    <footer>
+        <div class="firstSectionFooter">
+            <div class="logoContainer">
+                <img class="logo" src="images/logo/logo_small.png" alt="assigmentPicture">
+            </div>
+            <div class="infoContainer">
+                <div class="locationContainer">
+                    <div class="locationPinContainer">
+                        <a href="https://goo.gl/maps/ReLhHmP1Ym7TwNpB8">
+                            <img class="locationPin" src="images/pinLocation.png" alt="location">
+                        </a>
+                    </div>
+                    <p>info@dcc.org +(720) 555-5555 1700 Broadway Denver CO</p>
+                </div>
+                <p id="personalInfo"></p>
+                <p id="currentDate"></p>
+                <p id="daysSinceLastVisit"></p>
+                <a href="https://openweathermap.org/" target="_blank">Open Weather Map</a>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

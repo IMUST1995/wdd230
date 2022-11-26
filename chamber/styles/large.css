@@ -111,6 +111,7 @@
     }
     .spotlightCard h2{
         font-size: 1rem;
+        margin-top: .3rem;
     }
     .spotLightImgContainer {
         max-width: 60%;
