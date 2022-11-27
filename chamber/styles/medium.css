@@ -178,7 +178,7 @@
         display: grid;
         grid-template-columns: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .locationPinContainerContact {
         width: 44px;
@@ -186,8 +186,5 @@
     }
     .locationContactContainer {
         margin-bottom: 1rem;
-    }
-    .contactInformationContainer{
-        padding: .5rem;
     }
 }
