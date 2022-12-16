@@ -32,7 +32,7 @@ responsiveMenu()
 
 /* banner */
 
-if(numberDay == 3){
+if(numberDay == 1 || numberDay == 2){
     const spanBanner = document.querySelector('#banner')
     spanBanner.style.margin = "1rem 1rem 0 1rem"
     spanBanner.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.'
